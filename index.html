@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Punic Wars: Hannibal's Path</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap');
+      
+      body {
+        font-family: 'Lato', sans-serif;
+        background-color: #1c1917; /* Stone 900 */
+        overflow: hidden;
+      }
+      
+      h1, h2, h3, button {
+        font-family: 'Cinzel', serif;
+      }
+
+      .map-container {
+        /* Realistic Topographic Map of Western Mediterranean */
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Western_Mediterranean_Sea_Topographic_Map.png/2560px-Western_Mediterranean_Sea_Topographic_Map.png');
+        background-size: cover;
+        background-position: center;
+        background-color: #1e3a8a;
+      }
+      
+      /* Winter Overlay Animation */
+      .winter-overlay {
+        pointer-events: none;
+        transition: opacity 2s ease-in-out;
+        background-color: #e0f2fe; /* Light blue */
+        mix-blend-mode: hard-light; /* Better for overlaying on detailed images */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
